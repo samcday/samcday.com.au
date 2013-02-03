@@ -30,7 +30,7 @@ The Buffer you're used to dealing with from Node.js user code actually originate
 
 So how do you create one of these badboys from C++ to pass directly back to JS calling code? Glad you asked. Like so:
 
-[code lang="cpp"]
+```cpp
 	// Some data we want to provide to Node.js userland code.
 	// This can be binary of course.
 	const char *data = "Hello world!";
@@ -65,6 +65,6 @@ So how do you create one of these badboys from C++ to pass directly back to JS c
 	
 	// This Buffer can now be provided to the calling JS code as easy as this:
 	return scope.Close(actualBuffer);
-[/code]
+```
 
 And that's all folks!

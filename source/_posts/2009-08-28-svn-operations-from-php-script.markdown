@@ -19,15 +19,17 @@ The tricky part was getting the svn update php script to work. In the end I figu
 
 I'm using Plesk, so when I created the dev server vhost a dev user was created. So what I did was edited /etc/sudoers and added the following:
 
-apache ALL=(dev) NOPASSWD:/usr/bin/svn
+	apache ALL=(dev) NOPASSWD:/usr/bin/svn
 
 What this does is allow apache (remember that PHP scripts execute under apache user and group) to execute svn under the dev user. The NOPASSWD is important, sudo only accepts input from interactive shell (there are some hacky ways of injecting cleartext but I found them to be somewhat hit and miss). NOPASSWD ensures that sudo does what we ask it to do, no questions asked. 
 
 So from the PHP script I had something like the following:
 
+```phponly
 	$sudoCommand = "/usr/bin/sudo -u dev ";
 	$svnUpdateCommand = "{$sudoCommand}/usr/bin/svn update --username devserver --password blah --non-interactive 2>&1";
 	$svnCleanupCommand = "{$sudoCommand}/usr/bin/svn cleanup 2>&1";
+```
 
 The rest is pretty self explanatory! Redirecting stderr to stdout, setting authentication details, blah blah blah. exec()'ing the command above does the trick.
 

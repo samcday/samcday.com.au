@@ -24,7 +24,7 @@ An issue I ran into was I wanted to reduce the boilerplate on handling requests,
 
 Consulting the Express/Connect/Node docs yielded no clues as to how to do this, the closest hint I found was from the Node docs indicating that a http.ServerResponse is a WritableStream. I noticed WritableStreams had a "close" event that is supposed to be called when the Stream is no longer writable. I assumed that if you call **.end()** on a response then it should trigger this event, so my initial middleware looked like this:
 
-[code]
+```js
 setupRedisClient = (req, res, next) =>
 	req.redisClient = require("redis").createClient()
 
@@ -36,7 +36,7 @@ setupRedisClient = (req, res, next) =>
 	res.on "error", cleanup
 
 	next()
-[/code]
+```
 
 I tried using this middleware in a route, and was sad to see that the event was not being triggered.
 
@@ -44,7 +44,7 @@ As a last resort I started digging through the Node source, and lo and behold! I
 
 Now my Redis middleware looks like so:
 
-[code]
+```js
 setupRedisClient = (req, res, next) =>
 	req.redisClient = require("redis").createClient()
 
@@ -55,6 +55,6 @@ setupRedisClient = (req, res, next) =>
 	res.on "error", cleanup
 
 	next()
-[/code]
+```
 
 Incoming routes that need a Redis connection simply add this middleware, and hey presto! They can use req.redisClient to their hearts content. Once a response is sent back to the client, or an error occurs with the request, the Redis connection will be cleaned up automagically! Hurrah!
