@@ -1,0 +1,9 @@
+---
+title: "404"
+layout: page
+comments: false
+sharing: false
+footer: false
+---
+
+That's a 404. You should probably go back to the homepage.
