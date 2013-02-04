@@ -1,6 +1,7 @@
 ---
 date: '2010-03-01 13:36:43'
 layout: post
+comments: true
 slug: dillinger-escape-awesome
 status: publish
 title: DILLINGER ESCAPE AWESOME

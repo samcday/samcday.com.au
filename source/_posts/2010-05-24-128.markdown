@@ -1,6 +1,7 @@
 ---
 date: '2010-05-24 19:31:07'
 layout: post
+comments: true
 slug: '128'
 status: publish
 title: Periphery/Maylene/Dillinger Concert

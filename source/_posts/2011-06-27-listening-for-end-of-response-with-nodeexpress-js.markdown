@@ -1,6 +1,7 @@
 ---
 date: '2011-06-27 16:44:44'
 layout: post
+comments: true
 slug: listening-for-end-of-response-with-nodeexpress-js
 status: publish
 title: Listening for end of response with Node/Express.JS

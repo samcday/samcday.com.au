@@ -1,6 +1,7 @@
 ---
 date: '2009-05-08 14:57:51'
 layout: post
+comments: true
 slug: hallo-internet
 status: publish
 title: Hallo ... internet ...

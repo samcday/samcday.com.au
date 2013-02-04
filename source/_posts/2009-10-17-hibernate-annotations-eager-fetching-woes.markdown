@@ -1,6 +1,7 @@
 ---
 date: '2009-10-17 17:57:44'
 layout: post
+comments: true
 slug: hibernate-annotations-eager-fetching-woes
 status: publish
 title: Hibernate Annotations Eager Fetching Woes

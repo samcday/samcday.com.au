@@ -1,6 +1,7 @@
 ---
 date: '2010-05-03 23:27:34'
 layout: post
+comments: true
 slug: '98'
 status: publish
 title: iPad dealbreaker...

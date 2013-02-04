@@ -1,6 +1,7 @@
 ---
 date: '2010-02-21 18:46:51'
 layout: post
+comments: true
 slug: pdf-eh
 status: publish
 title: PDF eh?

@@ -1,6 +1,7 @@
 ---
 date: '2009-05-13 21:40:09'
 layout: post
+comments: true
 slug: holy-crap
 status: publish
 title: Holy Crap.

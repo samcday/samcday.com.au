@@ -1,6 +1,7 @@
 ---
 date: '2009-05-08 15:19:49'
 layout: post
+comments: true
 slug: a-revelation
 status: publish
 title: A revelation.

@@ -1,6 +1,7 @@
 ---
 date: '2009-05-15 08:58:36'
 layout: post
+comments: true
 slug: windows-7-eh
 status: publish
 title: Windows 7 eh ....

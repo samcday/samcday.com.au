@@ -1,6 +1,7 @@
 ---
 date: '2009-05-15 10:51:12'
 layout: post
+comments: true
 slug: windows-media-player-plugin-wizard-with-vc2008express
 status: publish
 title: Windows Media Player Plugin Wizard with VC2008Express

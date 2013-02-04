@@ -1,6 +1,7 @@
 ---
 date: '2012-01-21 23:11:55'
 layout: post
+comments: true
 slug: inotify-node-ftp-easy-mode-remote-dev-work
 status: publish
 title: Inotify + Node + FTP = Easy-mode remote dev work

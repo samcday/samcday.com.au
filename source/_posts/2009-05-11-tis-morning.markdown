@@ -1,6 +1,7 @@
 ---
 date: '2009-05-11 07:20:00'
 layout: post
+comments: true
 slug: tis-morning
 status: publish
 title: '''tis morning.'

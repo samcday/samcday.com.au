@@ -1,6 +1,7 @@
 ---
 date: '2009-10-18 16:31:08'
 layout: post
+comments: true
 slug: what-will-google-think-up-next
 status: publish
 title: What will Google think up next?!?!

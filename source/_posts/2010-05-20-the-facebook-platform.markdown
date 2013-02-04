@@ -1,6 +1,7 @@
 ---
 date: '2010-05-20 22:11:56'
 layout: post
+comments: true
 slug: the-facebook-platform
 status: publish
 title: The Facebook Platform

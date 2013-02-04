@@ -1,6 +1,7 @@
 ---
 date: '2010-03-31 21:18:48'
 layout: post
+comments: true
 slug: dillinger-escape-plan-option-paralysis
 status: publish
 title: Dillinger Escape Plan - Option Paralysis

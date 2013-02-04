@@ -1,6 +1,7 @@
 ---
 date: '2010-06-03 16:01:27'
 layout: post
+comments: true
 slug: spring-roo
 status: publish
 title: Spring Roo

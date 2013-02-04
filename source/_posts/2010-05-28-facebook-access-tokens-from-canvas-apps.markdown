@@ -1,6 +1,7 @@
 ---
 date: '2010-05-28 16:31:26'
 layout: post
+comments: true
 slug: facebook-access-tokens-from-canvas-apps
 status: publish
 title: Facebook Access Tokens from Canvas Apps

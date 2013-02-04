@@ -1,6 +1,7 @@
 ---
 date: '2012-05-01 21:04:14'
 layout: post
+comments: true
 slug: fun-with-polymaps
 status: publish
 title: Fun with Polymaps

@@ -1,6 +1,7 @@
 ---
 date: '2010-03-08 15:52:12'
 layout: post
+comments: true
 slug: shiny-desktop-notifications-from-google-chrome
 status: publish
 title: Shiny Desktop Notifications from Google Chrome

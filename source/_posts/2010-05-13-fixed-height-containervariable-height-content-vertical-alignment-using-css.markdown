@@ -1,6 +1,7 @@
 ---
 date: '2010-05-13 10:38:55'
 layout: post
+comments: true
 slug: fixed-height-containervariable-height-content-vertical-alignment-using-css
 status: publish
 title: Fixed-height container/variable-height content Vertical Alignment using CSS

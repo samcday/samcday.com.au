@@ -1,6 +1,7 @@
 ---
 date: '2009-12-16 20:24:24'
 layout: post
+comments: true
 slug: iphone-says-hello
 status: publish
 title: iPhone says hello

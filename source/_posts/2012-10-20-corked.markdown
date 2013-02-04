@@ -1,6 +1,7 @@
 ---
 date: '2012-10-20 14:16:00'
 layout: post
+comments: true
 slug: corked
 status: publish
 title: Corked!

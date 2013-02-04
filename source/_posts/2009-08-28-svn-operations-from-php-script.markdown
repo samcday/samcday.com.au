@@ -1,6 +1,7 @@
 ---
 date: '2009-08-28 10:52:16'
 layout: post
+comments: true
 slug: svn-operations-from-php-script
 status: publish
 title: SVN operations from PHP script

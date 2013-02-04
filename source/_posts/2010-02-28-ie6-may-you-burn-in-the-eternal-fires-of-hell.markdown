@@ -1,6 +1,7 @@
 ---
 date: '2010-02-28 11:20:22'
 layout: post
+comments: true
 slug: ie6-may-you-burn-in-the-eternal-fires-of-hell
 status: publish
 title: IE6 - May you burn in the eternal fires of HELL

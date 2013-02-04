@@ -1,6 +1,7 @@
 ---
 date: '2009-10-22 11:20:56'
 layout: post
+comments: true
 slug: ie-ajax-caching
 status: publish
 title: IE + AJAX == Caching???

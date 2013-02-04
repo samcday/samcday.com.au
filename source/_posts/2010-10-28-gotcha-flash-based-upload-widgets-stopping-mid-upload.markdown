@@ -1,6 +1,7 @@
 ---
 date: '2010-10-28 21:51:53'
 layout: post
+comments: true
 slug: gotcha-flash-based-upload-widgets-stopping-mid-upload
 status: publish
 title: 'Gotcha: Flash-based Upload widgets stopping mid upload'

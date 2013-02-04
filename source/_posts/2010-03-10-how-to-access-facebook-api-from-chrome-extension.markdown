@@ -1,6 +1,7 @@
 ---
 date: '2010-03-10 12:58:20'
 layout: post
+comments: true
 slug: how-to-access-facebook-api-from-chrome-extension
 status: publish
 title: How to access Facebook API from Chrome Extension

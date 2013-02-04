@@ -1,6 +1,7 @@
 ---
 date: '2010-05-26 00:25:42'
 layout: post
+comments: true
 slug: facebook-platform-bugs
 status: publish
 title: Facebook Platform Bugs

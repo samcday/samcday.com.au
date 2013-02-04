@@ -1,6 +1,7 @@
 ---
 date: '2011-03-03 09:14:53'
 layout: post
+comments: true
 slug: creating-a-proper-buffer-in-a-node-c-addon
 status: publish
 title: Creating a proper Buffer in a Node C++ Addon

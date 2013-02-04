@@ -1,6 +1,7 @@
 ---
 date: '2009-05-15 11:51:14'
 layout: post
+comments: true
 slug: atlmfc-dependancies-in-visual-studio-2008-express
 status: publish
 title: ATL/MFC dependancies in Visual Studio 2008 Express

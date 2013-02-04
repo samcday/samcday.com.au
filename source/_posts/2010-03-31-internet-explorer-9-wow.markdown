@@ -1,6 +1,7 @@
 ---
 date: '2010-03-31 22:27:35'
 layout: post
+comments: true
 slug: internet-explorer-9-wow
 status: publish
 title: Internet Explorer 9.... wow?

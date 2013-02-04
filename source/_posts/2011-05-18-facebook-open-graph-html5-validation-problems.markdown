@@ -1,6 +1,7 @@
 ---
 date: '2011-05-18 12:37:37'
 layout: post
+comments: true
 slug: facebook-open-graph-html5-validation-problems
 status: publish
 title: Facebook Open Graph HTML5 Validation Problems

@@ -1,6 +1,7 @@
 ---
 date: '2010-03-04 14:21:17'
 layout: post
+comments: true
 slug: i
 status: publish
 title: 'I '

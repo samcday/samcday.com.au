@@ -1,6 +1,7 @@
 ---
 date: '2012-02-01 18:57:56'
 layout: post
+comments: true
 slug: switching-from-gnome-3-to-mate
 status: publish
 title: Switching from Gnome 3 to MATE

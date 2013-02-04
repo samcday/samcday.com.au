@@ -1,6 +1,7 @@
 ---
 date: '2010-02-21 22:17:04'
 layout: post
+comments: true
 slug: soundwave-2010
 status: publish
 title: Soundwave 2010

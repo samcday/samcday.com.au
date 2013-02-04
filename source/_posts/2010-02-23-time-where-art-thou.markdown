@@ -1,6 +1,7 @@
 ---
 date: '2010-02-23 22:17:02'
 layout: post
+comments: true
 slug: time-where-art-thou
 status: publish
 title: Time. Where art thou?

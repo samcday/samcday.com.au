@@ -1,6 +1,7 @@
 ---
 date: '2010-06-01 12:22:54'
 layout: post
+comments: true
 slug: gotcha-removing-border-in-ie
 status: publish
 title: 'Gotcha: Removing iframe border in IE.'

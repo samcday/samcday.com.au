@@ -1,6 +1,7 @@
 ---
 date: '2010-08-30 13:44:30'
 layout: post
+comments: true
 slug: facebook-platform-updates-w00t
 status: publish
 title: Facebook Platform updates - w00t!

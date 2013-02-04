@@ -1,6 +1,7 @@
 ---
 date: '2010-05-15 13:57:54'
 layout: post
+comments: true
 slug: album-plug-converge-axe-to-fall
 status: publish
 title: 'Album plug: Converge - Axe to Fall'

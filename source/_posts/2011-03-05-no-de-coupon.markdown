@@ -1,6 +1,7 @@
 ---
 date: '2011-03-05 10:36:25'
 layout: post
+comments: true
 slug: no-de-coupon
 status: publish
 title: No.de coupon

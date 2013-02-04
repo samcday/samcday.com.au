@@ -1,6 +1,7 @@
 ---
 date: '2012-01-31 18:32:42'
 layout: post
+comments: true
 slug: glassfish-2-grails-2-logging
 status: publish
 title: Glassfish 2 & Grails 2 Logging
