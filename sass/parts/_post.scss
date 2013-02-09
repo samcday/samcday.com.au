@@ -40,4 +40,15 @@
 		.tags:before{content: "\f02c";}
 		.comments:before{content: "\f075";}
 	}
+
+	.postimg {
+		text-align: center;
+		a {
+			display: block;
+		}
+
+		.caption {
+			display: inline-block;
+		}
+	}
 }
