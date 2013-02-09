@@ -11,7 +11,7 @@ categories:
 - Personal
 ---
 
-[caption id="attachment_40" align="aligncenter" width="300" caption="Dillinger Escape Plan - Option Paralysis"][![Option Paralysis](http://sambro.is-super-awesome.com/wp-content/uploads/optionparalysis-300x300.jpg)](http://sambro.is-super-awesome.com/wp-content/uploads/optionparalysis.jpg)[/caption]
+{% img /images/content/optionparalysis.jpg 'Dillinger Escape Plan - Option Paralysis' 'Dillinger Escape Plan - Option Paralysis' %}
 
 After listening to [Dillinger Escape Plan](http://en.wikipedia.org/wiki/The_Dillinger_Escape_Plan)'s latest album, [Option Paralysis](http://en.wikipedia.org/wiki/Option_Paralysis), on repeat for the past week, I felt it necessary to write my own little review of it. Here goes.
 
