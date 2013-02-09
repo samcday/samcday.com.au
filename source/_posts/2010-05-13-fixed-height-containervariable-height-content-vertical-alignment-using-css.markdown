@@ -30,7 +30,7 @@ I have stumbled across the following page a few times now, it's the best resourc
 I've adapted this solution into a set of 2 CSS files that I now use when I need to vertically center something.
 
 **valign.css**
-[css]
+```css
 div.valignContainer {
 	display: table;
 	overflow: hidden;
@@ -40,10 +40,10 @@ div.valignMiddle {
 	display: table-cell;
 	vertical-align: middle;
 }
-[/css]
+```
 
 **valign_ie.css**
-[css]
+```css
 div.valignContainer {
 	position: relative;
 }
@@ -57,27 +57,27 @@ div.valignInner {
 	position: relative;
 	top: -50%;
 }
-[/css]
+```
 
 Include it in the page like so:
-[php htmlscript="true"]
+```html
 <link rel="stylesheet" href="valign.css" type="text/css"/>
 <!--[if lte IE 7]>
 <link rel="stylesheet" href="valign_ie.css" type="text/css"/>
 <![endif]-->
-[/php]
+```
 
 To use this solution, let's say you currently had markup like so:
-[php htmlscript="true"]
+```html
 <div id="myContainerThatSpecifiesAppearanceAndDimensions">
   <div id="myContentThatNeedsTobeVerticallyCentered">
     Content that should be vertically centered!
   </div>
 </div>
-[/php]
+```
 
 You would change it to the following:
-[php htmlscript="true"]
+```html
 <div id="myContainerThatSpecifiesAppearanceAndDimensions" class="valignContainer">
   <div class="valignMiddle">
     <div id="myContentThatNeedsTobeVerticallyCentered" class="valignInner">
@@ -85,7 +85,7 @@ You would change it to the following:
     </div>
   </div>
 </div>
-[/php]
+```
 
 That's all, folks!
 

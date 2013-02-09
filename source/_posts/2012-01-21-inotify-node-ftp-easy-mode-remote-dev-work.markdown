@@ -38,7 +38,7 @@ I thought to myself: "Wouldn't it be cool if I had a little Node app running tha
 
 So I decided to cook something up. A couple of hours later I came up with this:
 
-[https://gist.github.com/1652663](https://gist.github.com/1652663)
+{% gist 1652663 ftp_sync.coffee %}
 
 I didn't end up using the libinotify bindings for Node.js, as it was a little too low level for a quick prototype. The main pain point was the fact that inotify isn't actually recursive, so you actually have to put together your own code that recursively creates watch descriptors for the directory structure, glue in new watch descriptors as new directories get created, and delete old descriptors as directories disappear. I instead opted to use the awesome inotifywait tool (which comes from the inotify-tools package in Ubuntu) which handles all the un-fun parts of inotify and instead sends nice little status updates on stdout.
 

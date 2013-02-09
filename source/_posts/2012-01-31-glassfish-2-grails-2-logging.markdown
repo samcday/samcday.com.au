@@ -49,7 +49,7 @@ Previously in Grails 1.3.7, we were using the technique Reiney Sadder outlined i
 
 So, how do we achieve this in Grails 2? Simple! Just add the following to your BuildConfig.groovy:
 
-[groovy]
+```groovy
 // Inside your grails.project.dependency.resolution closure:
 
 inherits("global") {
@@ -63,15 +63,15 @@ dependencies {
 		runtime "org.slf4j:slf4j-jdk14:1.6.4"
 	}
 }
-[/groovy]
+```
 
 This will disable log4j entirely in production environment and add the slf4j-jdk14 JUL bridge. 
 
 NOTE: Make sure you definitely have the following line added to your Config.groovy:
 
-[groovy]
+```groovy
 grails.logging.jul.usebridge = false
-[/groovy]
+```
 
 You really should have this disabled for production anyway, as [it's not very performant](http://www.slf4j.org/legacy.html#jul-to-slf4j).
 
