@@ -142,6 +142,12 @@ figure.code{
 				font: 0.9em $font-mono;
 				line-height: 1.5;
 			}
+			.line-numbers > .line-number {
+				line-height: 19px;
+			}
+			.line-data {
+				text-align: left;
+			}
 		}
 		.gist-meta{
 			font: 300 0.9em $font-default;
