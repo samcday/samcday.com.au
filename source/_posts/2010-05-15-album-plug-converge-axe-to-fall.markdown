@@ -20,7 +20,7 @@ This time around, I'm going to cover a certain album I've been listening to nons
 
 Today's album is **Converge - Axe to Fall**
 
-[caption id="attachment_120" align="aligncenter" width="300" caption="Converge - Axe to Fall"][![](http://sambro.is-super-awesome.com/wp-content/uploads/converge_axe_to_fall-300x300.jpg)](http://sambro.is-super-awesome.com/wp-content/uploads/converge_axe_to_fall.jpg)[/caption]
+{% img /images/content/axetofall.jpg 'Converge - Axe to Fall' 'Converge - Axe to Fall' %}
 
 I'm embarrassed to say I actually had this album lying around for a couple of months before I got around to listening to it. I've been a little closed-minded in recent weeks, and haven't really been trying new music out. I've never really listened to Converge, however Axe to Fall is their seventh studio album since they started in '94.
 
