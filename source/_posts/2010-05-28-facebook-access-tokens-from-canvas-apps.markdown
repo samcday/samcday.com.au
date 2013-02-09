@@ -26,7 +26,7 @@ There's an [open bug](http://bugs.developers.facebook.com/show_bug.cgi?id=9879) 
 There's a bit of info hiding in the documentation [upgrade guide](http://developers.facebook.com/docs/guides/upgrade) that outlines how to "exchange" a session key for an access token. All you need to do is POST some info to an endpoint and it'll spit back a valid access token.
 
 Like so:
-[php]
+```phponly
 	$ch = curl_init("https://graph.facebook.com/oauth/exchange_sessions");
 	curl_setopt($ch, CURLOPT_POST, true);
 	curl_setopt($ch, CURLOPT_POSTFIELDS, array(
@@ -39,7 +39,7 @@ Like so:
 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
 	$result = json_decode(curl_exec($ch));
 	$accessToken = $result[0]->access_token;
-[/php]
+```
 
 So what's going on here? You're POSTing a request to the Facebook OAuth implementation to exchange your session key for an access token. You provide your application id and secret (important: this needs to be id and secret for the canvas application the request originated from of course) and the session ID of the user. Send this off and a JSON response will come back with the access token. Also, if needed, there's another property passed back - "expires", which will let you know when this access token will die.
 
@@ -47,7 +47,7 @@ Okay, so now you have an access token for use with the new API. Now what?
 
 There's a little bit of fudging required to use this with the PHP SDK. The setSession() method of the PHP SDK doesn't just take an access token, it expects all the other crap that is usually contained in the cookie it saves. The idea behind my solution is that you shouldn't need to modify any base classes. The code below will con the Facebook library into accepting your newly acquired access token:
 
-[php]
+```phponly
 	$session = array(
 		"uid" => "",
 		"session_key" => "",
@@ -59,7 +59,7 @@ There's a little bit of fudging required to use this with the PHP SDK. The setSe
 	foreach($session as $sessionKey => $sessionValue) $sessionStr .= implode("=", array($sessionKey, $sessionValue));
 	$session["sig"] = md5($sessionStr."<your app secret>");
 	$facebook->setSession($session, false);
-[/php]
+```
 
 What this code is doing is constructing a fake session object. Since the only thing the SDK actually looks at in this session data is the access_token, we just fill the other entries with an empty str. Once this is done, we just calculate a signature for the data, as per the [Facebook Wiki documentation](http://wiki.developers.facebook.com/index.php/Verifying_The_Signature). Again, we're only doing this because the setSession() method demands it.
 
@@ -67,9 +67,9 @@ Once this is done, you can go ahead and make api calls! Now wasn't that easy? :)
 
 Also, as a little footnote, you should know that you don't actually have to fudge the session, you can just pass the access token you get into each api call, like so:
 
-[php]
+```phponly
 $facebook->api(array("method" => "stream.get", "access_token" => $accessToken));
-[/php]
+```
 
 ... But this is a bit cumbersome. Also, with the fake session, you can just remove my code later when Facebook starts sending access token in the initial POST data.
 

@@ -21,12 +21,12 @@ I'm currently working on a site currently that uses a few [Facebook "Like" butto
 
 The fun part of this is that the [Open Graph specification](http://ogp.me/) states that OG metadata should be embedded on the page like so:
 
-[html]
+```html
 <meta property="og:title" content="The Rock" />
 <meta property="og:type" content="movie" />
 <meta property="og:url" content="http://www.imdb.com/title/tt0117500/" />
 <meta property="og:image" content="http://ia.media-imdb.com/images/rock.jpg" />
-[/html]
+```
 
 The stupid thing is this is actually invalid HTML5. The HTML5 spec states that meta tags must use the **name**/**content** attributes, and because OG is based off [RDFa](http://en.wikipedia.org/wiki/RDFa), an XHTML draft, OG mandates that its metadata uses the **property** attribute instead of the **name** attribute. After [Googling](http://www.google.com/search?q=meta+property+invalid&hl=en) [around](http://www.google.com/search?q=og:title+meta+property+invalid+markup&hl=en) a [bit](http://www.google.com/search?q=html5+open+graph+meta+property&hl=en) I came to the "conclusion" that the only way to get a page to validate with Open Graph tags was to switch to XHTML.
 

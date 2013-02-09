@@ -25,13 +25,13 @@ Think I'm gonna start a little mini-series of blog posts with the little "gotcha
 Todays one is a fun one. Removing a frameborder on an iframe in Internet Explorer is case-sensitive, would you believe it!
 
 That is to say:
-[php htmlscript="true"]
+```html
 <iframe frameborder="0" src="http://www.google.com.au/"></iframe>
-[/php]
+```
 .. Probably won't work. Whereas:
-[php htmlscript="true"]
+```html
 <iframe frameBorder="0" src="http://www.google.com.au/"></iframe>
-[/php]
+```
 Will!
 
 This also extends to creating an iframe using DOM. You need to do this:
@@ -40,11 +40,11 @@ Think I'm gonna start a little mini-series of blog posts with the little "gotcha
 Todays one is a fun one. Removing a frameborder on an iframe in Internet Explorer is case-sensitive, would you believe it!
 
 That is to say:
-[php htmlscript="true"]
+```js
 myIframeEl.setAttribute("frameborder", "0");
-[/php]
+```
 Is not going to work in IE.
-[php htmlscript="true"]
+```js
 myIframeEl.setAttribute("frameBorder", "0");
-[/php]
+```
 But this will.
