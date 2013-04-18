@@ -1,0 +1,56 @@
+---
+layout: post
+title: "Golang"
+date: 2013-04-18 16:25
+comments: true
+categories: 
+---
+
+Google's [Go](http://golang.org/) programming language, while not new, has been 
+making the rounds on Hacker News headlines quite alot lately. I've been wanting
+to try a new language, but was put off by the not-quite-1.0-yet status of Rust,
+and Scala/Clojure didn't quite pique my interest enough to sit down and give 
+them a proper go.
+
+Other than a few testimonials from companies like Airbrake/Cloudflare/DNSimple
+saying that Go is awesome for use case X and blah blah blah ... I didn't really
+know what the fuss was all about with Go, other than it's good for concurrency,
+and had some interesting ideas around syntax and dependency management.
+
+I finally took the plunge and went through the [Go tour](http://tour.golang.org)
+and I'm definitely impressed. Go-lang is a pretty freakin' sweet language!
+
+Some reasons why it's awesome include:
+
+ * **Static compilation** - no more pip/bundle/npm package management issues. No 
+ more juggling the correct version of a runtime, Go compiles ALL OF THE THINGS
+ into a single static binary.
+ * **Syntax** - apart from the backward-ness in variable definitions, Go syntax is
+ very clean and very readable.
+ * **Code style** - Go ships with gofmt, which means programmers no longer have to 
+quibble over code style nonsense, the language designers decided on it for you.
+ * **Sweet tooling** - the go compiler suite comes with lots of awesome functionality
+ straight out of the box.
+ * **Concurrency** - I didn't know what [CSP](https://en.wikipedia.org/wiki/Communicating_sequential_processes)
+ was before I picked up Go, but I would definitely choose goroutines and channels
+ over Java java.util.concurrent / Node callback-soup / Node fibers any day.
+
+Some parts about Go that I'm concerned about, or don't fully understand:
+
+ * **Dependency versioning** - while Go has a very opionated appreoach to dependency
+ management, it also sports a very rudimentary package manager of sorts (I consider `go get`
+ package management, feel free to tell me I'm wrong), it seems that [handling dependency versioning](https://github.com/alco/gostart#faq15) is a bit dodgy.
+ * **Runtime performance** - Go site itself mentions that its still early days
+ for its garbage collection and allocator. That said many benchmarks are looking
+ very promising for Go 1.0, and also much better for Go 1.1.
+ * **Package maturity** - I've learnt this one from personal experience - you need
+ to be extemely cautious about which 3rd-party packages you pull in for an immature programming language. I
+ started using Node.js as an early-adopter, and while NPM is exploding with amazing packages
+ now, early on there were a lot of poorly written libraries, and worse, some libraries
+ written in C that had all kinds of concurrency issues. Since Go's recommended
+ approach is to re-implement all of the things in pure Go, I suspect that many 
+ people will find themselves re-implementing/porting stuff all over the place.
+
+With that said, I haven't actually had a chance to use Go in anger on something
+interesting yet, though I do intend to rectify that ASAP. I look forward to 
+open sourcing something interesting in Go on my github profile in the near future!
