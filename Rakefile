@@ -389,5 +389,5 @@ end
 desc "Deploy website via s3cmd"
 task :s3 do
   puts "## Deploying website via s3cmd"
-  ok_failed system("s3cmd sync -c .s3cfg --acl-public #{"--delete-removed" unless s3_delete == false}  --add-header \"Cache-Control: max-age=#{s3_cache_secs}\" --cf-invalidate public/* s3://#{s3_bucket}/")
+  ok_failed system("s3cmd sync --acl-public #{"--delete-removed" unless s3_delete == false}  --add-header \"Cache-Control: max-age=#{s3_cache_secs}\" --cf-invalidate public/* s3://#{s3_bucket}/")
 end
