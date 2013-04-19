@@ -9,7 +9,7 @@ ssh_port       = "22"
 document_root  = "~/website.com/"
 rsync_delete   = false
 rsync_args     = ""  # Any extra arguments to pass to rsync
-deploy_default = "rsync"
+deploy_default = "s3"
 
 # This will be configured for you when you run config_deploy
 deploy_branch  = "gh-pages"
@@ -27,6 +27,10 @@ new_post_ext    = "markdown"  # default new post file extension when using the n
 new_page_ext    = "markdown"  # default new page file extension when using the new_page task
 server_port     = "4000"      # port for preview server eg. localhost:4000
 
+## -- S3 Deploy config -- #
+s3_bucket      = "www.samcday.com.au"  # Enter your S3 bucket name here
+s3_cache_secs  = "3600"   # Number of seconds to keep objects in cache - 3600 = 1 hour
+s3_delete      = true     # True if you want to remove deleted files in you public-directory from the S3 bucket
 
 desc "Initial setup for Octopress: copies the default theme into the path of Jekyll's generator. Rake install defaults to rake install[classic] to install a different theme run rake install[some_theme_name]"
 task :install, :theme do |t, args|
@@ -380,4 +384,10 @@ desc "list tasks"
 task :list do
   puts "Tasks: #{(Rake::Task.tasks - [Rake::Task[:list]]).join(', ')}"
   puts "(type rake -T for more detail)\n\n"
+end
+
+desc "Deploy website via s3cmd"
+task :s3 do
+  puts "## Deploying website via s3cmd"
+  ok_failed system("s3cmd sync -c .s3cfg --acl-public #{"--delete-removed" unless s3_delete == false}  --add-header \"Cache-Control: max-age=#{s3_cache_secs}\" --cf-invalidate public/* s3://#{s3_bucket}/")
 end
