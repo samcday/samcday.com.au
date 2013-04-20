@@ -20,7 +20,7 @@ patience to learn enough about design to apply it practically to things I
 create, in either my career or my personal endeavours.
 
 I'm trying to change that now though, and with amazing resources like 
-[http://hackdesign.org/](Hack Design), I may actually have a shot at learning
+[Hack Design](http://hackdesign.org/), I may actually have a shot at learning
 a thing or two about design.
 
 ### Kerning?

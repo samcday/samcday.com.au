@@ -91,6 +91,6 @@ With that out of the way, you can now execute this on your workstation:
 	shfs remoteuser@remote.host:/some/path /local/mount -o sftp_server="/usr/bin/sudo -u otheruser /path/to/sftp-server"
 
 Voila! Now when you make changes to `/local/mount` on your workstation, the 
-changes will be applied using by the `otheruser` on the remote host.
+changes will be made using the `otheruser` on the remote host.
 
 Go forth and securely edit remote filesystems with wild abandon!
